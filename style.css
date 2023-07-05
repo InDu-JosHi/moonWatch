@@ -1,0 +1,227 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ----------------------Background Image------------------ */
+.background{
+    background-image: url(./Deep\ Space.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* ----------------------Side Bar------------------ */
+.side-bar{
+    height: 100vh;
+    width: 4.5%;
+    border-right: 1px solid rgb(66, 63, 63);
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+.side-bar p{
+    letter-spacing: 1px;
+    transform: rotate(270deg);
+    position: absolute;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    font-weight: bold;
+    left: 25%;
+}
+.side-bar .r{
+    bottom: 0%;
+    color: red;
+}
+.side-bar .q{
+    bottom: 10%;
+}
+.side-bar .p{
+    bottom: 20%;
+}
+
+/* ----------------------Navigation------------------ */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 4.5%;
+}
+.logo i{
+    font-size: 40px;
+    background-color: red;
+    padding: 40%;
+}
+.menu{
+    font-size: 14px;
+}
+.menu li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(179, 172, 172);
+    letter-spacing: 1px;
+    position: relative;
+    padding: 0px 5px;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+    transition: 0.5s ease;
+}
+a:hover{
+    color: white;
+}
+a:hover::after{
+    width: 100%;
+}
+/* ----------------------About------------------ */
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 8% 1%;
+}
+.moon{
+    text-align: left;
+    width: 500px;
+}
+.about .moon small{
+    font-size: 18px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: grey;
+}
+.moon p{
+    color: gray;
+}
+.moon h1{
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin: 0px 0px 10px;
+    text-shadow: 5px 5px 5px rgb(70, 62, 62);
+}
+.moon button {
+    margin: 35px 0px;
+    padding: 10px 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.moon button:hover{
+    border: 1px solid grey;
+    background-color: transparent;
+    padding: 11px 21px;
+
+}
+.image img{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    right: 180px;
+    top: 120px;
+    z-index: 3;
+}
+/* .img img{
+    position: relative;
+    right: 20px;
+    bottom: 10px;
+    z-index: 1;
+    height: 630px;
+    width: 600px;
+} */
+/* ---------------------Price------------------ */
+.price{
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    left: 88%;
+    bottom: 30%;
+}
+.price small{
+    color: grey;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 5px 5px 0px;
+    letter-spacing: 1px;
+}
+.price p{
+    padding: 0px 4px ;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+/* ----------------------Piece------------------ */
+.piece{
+    height: 150px;
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 88%;
+    background-color: red;
+    z-index: 2;
+}
+.piece p{
+    padding: 10px 10px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.piece small{
+    color: grey;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 0px 10px;
+    margin-bottom: 50%;
+    letter-spacing: 1px;
+}
+
+
+
+/* ----------------------Last Bar------------------ */
+.last-bar{
+    height: 11%;
+    width: 75%;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    background-color: rgba(54, 53, 53, 0.9);
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.last-bar .w{
+    display: flex;
+    align-items: center;
+}
+.last-bar p{
+    font-size: 12px;
+    color: rgb(161, 157, 157);
+}
+.last-bar .w i{
+    font-size: 30px;
+    margin-right: 15px;
+}
